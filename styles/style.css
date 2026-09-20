@@ -58,6 +58,28 @@ html {
   object-fit: cover;      
 }
 
+.content__list {
+  display: flex;          
+  flex-direction: column; 
+  gap: 20px;              
+}
+
+.content__video-card {
+  display: flex;       
+  align-items: start; 
+}
+
+.content__video-card-thumbnail {
+  inline-size: 240px;       
+  block-size: 140px;      
+  object-fit: cover;       
+  object-position: center;   
+}
+
+.content__video-card-description-container {
+  flex-grow: 1; 
+}
+
 h1,
 h2,
 h3,
