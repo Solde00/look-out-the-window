@@ -80,6 +80,51 @@ html {
   flex-grow: 1; 
 }
 
+.search-form__fieldset-title {
+  font-family: inherit;       
+  font-size: 18px;           
+  font-weight: 400;          
+  margin-block-end: 12px;     
+}
+
+.title {
+  font-family: inherit;      
+  font-size: 75px;           
+  font-weight: 700;         
+  line-height: 0.94;           
+  text-transform: uppercase;  
+}
+
+.content__accent {
+  font-family: inherit;  
+  font-weight: 700;
+   color: rgba(255, 255, 255, 0.25);       
+}
+
+.content__card-link {
+  text-decoration: none; 
+  color: #fff;          
+}
+
+.content__video-card-title {
+  font-family: inherit;      
+  font-size: 18px;           
+  font-weight: 700;           
+  white-space: nowrap;       
+  overflow: hidden;           
+  text-overflow: ellipsis;    
+}
+
+.content__video-card-description {
+  font-family: inherit;       
+  font-size: 16px;          
+  line-height: 1.2;   
+  display: -webkit-box;  
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;     
+  overflow: hidden;         
+}
+
 h1,
 h2,
 h3,
