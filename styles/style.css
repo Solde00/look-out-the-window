@@ -17,12 +17,13 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
-  justify-content: center;;
+  justify-content: center;
+  padding-block: 100px;
 }
 
 .content{
   display: grid;
-  grid-template-columns: 500px 700px;
+  grid-template-columns: 700px 500px;
   gap: 50px;
   align-items: end;
 }
@@ -48,8 +49,8 @@ html {
 
 .result__video-container {
   inline-size: 100%;      
-  block-size: 300px;       
-  margin-block-end: 150px;  
+  block-size: 400px;       
+  margin-block-end: 20px;  
 }
 
 .result__video {
@@ -137,7 +138,7 @@ html {
 
 .search-form__checkbox-list {
   display: flex; 
-  gap: 15px;    
+  gap: 20px;    
 }
 
 .search-form__fieldset {
@@ -149,7 +150,7 @@ html {
   align-items: center;    
   gap: 5px;  
   inline-size: fit-content;             
-  cursor: pointer;      
+  cursor: pointer;     
 }
 
 .search-form__textfield {
@@ -166,6 +167,10 @@ html {
   appearance: none;
 }
 
+.search-form__textfield:focus{
+  border: 1px solid #fff;
+}
+
 .search-form__pseudo-checkbox {
   inline-size: 19px;
   block-size: 19px;
@@ -178,8 +183,8 @@ html {
 .search-form__pseudo-checkbox::after {
   content: "";
   display: none;
-  inline-size: 18px;
-  block-size: 18px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: #fff;
 }
 
@@ -187,9 +192,55 @@ html {
   display: block;
 }
 
+.search-form__label:focus-within {
+  outline: 1px solid #fff;
+}
+
+
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
+
+.button {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  align-self: flex-end;
+  margin-inline-start: auto;
+  inline-size: 195px;
+  block-size: 50px;
+}
+
+.more-button {
+  inline-size: 100%;
+  block-size: 50px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+
 
 h1,
 h2,
